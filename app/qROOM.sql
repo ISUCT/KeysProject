@@ -2,6 +2,7 @@
  *
  * @author Пользователь
  * @name qROOM
+ * @public
  */ 
 Select *
 From ROOM t1

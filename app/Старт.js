@@ -1,6 +1,7 @@
 /**
  * 
  * @author ксюша
+ * @public
  */
 function MainForm() {
     var self = this, model = this.model, form = this;

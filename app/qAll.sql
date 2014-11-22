@@ -2,6 +2,7 @@
  *
  * @author ксюша
  * @name qAll
+ * @public
  */ 
 Select * 
 From TEACHERKEY t1
