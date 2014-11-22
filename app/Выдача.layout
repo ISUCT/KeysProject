@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="358px" prefWidth="692px">
+  <widget name="button5" parent="Form" prefHeight="23px" prefWidth="71px" text="Выдать" type="ButtonDesignInfo">
+    <constraints bottom="35px" height="23px" left="396px" type="MarginConstraintsDesignInfo" width="71px"/>
+  </widget>
+  <widget name="button6" parent="Form" prefHeight="23px" prefWidth="71px" text="Отмена" type="ButtonDesignInfo">
+    <constraints bottom="35px" height="23px" left="216px" type="MarginConstraintsDesignInfo" width="71px"/>
+  </widget>
+  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="14px" prefWidth="192px" text="Окно выдачи ключей" type="LabelDesignInfo">
+    <constraints height="14px" left="240px" top="12px" type="MarginConstraintsDesignInfo" width="192px"/>
+    <easFont name="Tahoma" size="14"/>
+  </widget>
+  <widget horizontalAlignment="0" name="label1" parent="Form" prefHeight="26px" prefWidth="144px" text="Фамилия" type="LabelDesignInfo">
+    <constraints height="26px" left="24px" top="60px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget horizontalAlignment="0" name="label2" parent="Form" prefHeight="24px" prefWidth="144px" text="Имя" type="LabelDesignInfo">
+    <constraints height="24px" left="180px" top="60px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget horizontalAlignment="0" name="label3" parent="Form" prefHeight="24px" prefWidth="144px" text="Кафедра" type="LabelDesignInfo">
+    <constraints height="24px" left="336px" top="60px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget horizontalAlignment="0" name="Корпус" parent="Form" prefHeight="24px" prefWidth="144px" text="Корпус" type="LabelDesignInfo">
+    <constraints height="24px" right="44px" top="60px" type="MarginConstraintsDesignInfo" width="144px"/>
+  </widget>
+  <widget name="modelFormattedField" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
+    <constraints height="20px" left="48px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelFormattedField1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
+    <constraints height="20px" left="204px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelFormattedField2" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
+    <constraints height="20px" left="372px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelFormattedField3" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
+    <constraints height="20px" right="64px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="100px" prefWidth="396px" type="DbGridDesignInfo">
+    <treeDesignInfo/>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource/>
+    </rowsColumnsDesignInfo>
+    <constraints height="100px" left="144px" top="156px" type="MarginConstraintsDesignInfo" width="396px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>
