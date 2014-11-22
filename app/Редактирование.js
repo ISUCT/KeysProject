@@ -2,20 +2,24 @@
  * 
  * @author ксюша
  */
-function Редактирование() {
+function Edit() {
     var self = this, model = this.model, form = this;
     
     // TODO : place your code here
 
-    function button32ActionPerformed(evt) {//GEN-FIRST:event_button32ActionPerformed
+    function CathInfoActionPerformed(evt) {//GEN-FIRST:event_CathInfoActionPerformed
         // TODO Добавьте свой код:
-    }//GEN-LAST:event_button32ActionPerformed
+        var CathInfo = new Кафедра();
+        CathInfo.show();
+    }//GEN-LAST:event_CathInfoActionPerformed
 
-    function button321ActionPerformed(evt) {//GEN-FIRST:event_button321ActionPerformed
+    function CorpusInfoActionPerformed(evt) {//GEN-FIRST:event_CorpusInfoActionPerformed
         // TODO Добавьте свой код:
-    }//GEN-LAST:event_button321ActionPerformed
+    }//GEN-LAST:event_CorpusInfoActionPerformed
 
-    function buttonActionPerformed(evt) {//GEN-FIRST:event_buttonActionPerformed
+    function TeachInfoActionPerformed(evt) {//GEN-FIRST:event_TeachInfoActionPerformed
         // TODO Добавьте свой код:
-    }//GEN-LAST:event_buttonActionPerformed
+        var TeachInfo = new Преподаватели();
+        TeachInfo.show();
+    }//GEN-LAST:event_TeachInfoActionPerformed
 }
