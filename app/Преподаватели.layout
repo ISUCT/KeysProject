@@ -1,23 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="400px">
-  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="228px" text="Данные о преподавателях" type="LabelDesignInfo">
-    <constraints height="36px" left="96px" top="12px" type="MarginConstraintsDesignInfo" width="228px"/>
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="309px" prefWidth="624px">
+  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="450px" text="Данные о преподавателях" type="LabelDesignInfo">
+    <constraints height="36px" left="96px" right="78px" top="12px" type="MarginConstraintsDesignInfo"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="112px" prefWidth="348px" type="DbGridDesignInfo">
+  <widget name="modelGrid" parent="Form" prefHeight="121px" prefWidth="570px" type="DbGridDesignInfo">
     <treeDesignInfo/>
+    <column name="Имя">
+      <datamodelElement entityId="141666471339766" fieldName="firstname"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Фамилия">
+      <datamodelElement entityId="141666471339766" fieldName="lastname"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Отчество">
+      <datamodelElement entityId="141666471339766" fieldName="middlename"/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="Номер Телефона">
+      <datamodelElement entityId="141666471339766" fieldName="phonenumber"/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
     <rowsColumnsDesignInfo>
-      <rowsDatasource/>
+      <rowsDatasource entityId="141666471339766" field="false"/>
     </rowsColumnsDesignInfo>
-    <constraints height="112px" left="24px" top="60px" type="MarginConstraintsDesignInfo" width="348px"/>
+    <constraints bottom="128px" left="24px" right="30px" top="60px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget name="button" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
-    <constraints bottom="25px" height="23px" left="216px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="SaveActionPerformed" name="Save" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="22px" height="23px" right="24px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
-  <widget name="button1" parent="Form" prefHeight="23px" prefWidth="71px" text="Отмена" type="ButtonDesignInfo">
-    <constraints bottom="25px" height="23px" left="108px" type="MarginConstraintsDesignInfo" width="71px"/>
+  <widget actionPerformed="DeleteActionPerformed" name="Delete" parent="Form" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
+    <constraints height="23px" right="24px" top="192px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
-  <widget name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
-    <constraints height="23px" right="28px" top="180px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="addActionPerformed" name="add" parent="Form" prefHeight="23px" prefWidth="83px" text="Добавить" type="ButtonDesignInfo">
+    <constraints height="23px" left="396px" top="192px" type="MarginConstraintsDesignInfo" width="83px"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>
