@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="317px" prefWidth="518px">
-  <widget actionPerformed="button321ActionPerformed" name="button321" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
+  <widget actionPerformed="CorpusInfoActionPerformed" name="CorpusInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints bottom="25px" height="35px" left="324px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
-  <widget actionPerformed="button32ActionPerformed" name="button32" parent="Form" prefHeight="36px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
+  <widget actionPerformed="CathInfoActionPerformed" name="CathInfo" parent="Form" prefHeight="36px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints height="36px" left="324px" top="204px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
-  <widget name="button31" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
+  <widget name="StatusInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints height="35px" left="324px" top="156px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
-  <widget name="button3" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
+  <widget name="RoomInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints height="35px" left="324px" top="108px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
   <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="264px" text="Редактирование данных" type="LabelDesignInfo">
     <constraints height="36px" left="144px" top="12px" type="MarginConstraintsDesignInfo" width="264px"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
+  <widget actionPerformed="TeachInfoActionPerformed" name="TeachInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints height="35px" left="324px" top="60px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
   <widget name="label1" parent="Form" prefHeight="36px" prefWidth="168px" text="Данные о преподавателях" type="LabelDesignInfo">
