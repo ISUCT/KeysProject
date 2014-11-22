@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="372px" prefWidth="626px">
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="13px" height="23px" right="50px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="61px" height="23px" left="372px" type="MarginConstraintsDesignInfo" width="89px"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="528px" type="DbGridDesignInfo">
+    <column name="Название корпуса">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141666052744560" fieldName="name"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="141666052744560" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="192px" left="34px" top="70px" type="MarginConstraintsDesignInfo" width="528px"/>
+  </widget>
+  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="24px" prefWidth="432px" text="Информация о корпусах" type="LabelDesignInfo">
+    <constraints height="24px" left="82px" top="22px" type="MarginConstraintsDesignInfo" width="432px"/>
+    <easFont name="Tahoma" size="18"/>
+  </widget>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="24px" prefWidth="89px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="60px" height="24px" right="57px" type="MarginConstraintsDesignInfo" width="89px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>

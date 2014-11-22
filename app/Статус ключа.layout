@@ -1,4 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="400px">
-    <layout type="MarginLayoutDesignInfo"/>
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="380px" prefWidth="576px">
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="23px" prefWidth="89px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="69px" height="23px" right="19px" type="MarginConstraintsDesignInfo" width="89px"/>
+  </widget>
+  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="24px" prefWidth="432px" text="Информация о статусе ключа" type="LabelDesignInfo">
+    <constraints height="24px" left="72px" top="12px" type="MarginConstraintsDesignInfo" width="432px"/>
+    <easFont name="Tahoma" size="18"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="528px" type="DbGridDesignInfo">
+    <column name="Статус ключа">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141665893414092" fieldName="status"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="141665893414092" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="192px" left="24px" top="60px" type="MarginConstraintsDesignInfo" width="528px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="69px" height="23px" left="360px" type="MarginConstraintsDesignInfo" width="89px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="21px" height="23px" right="12px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
 </layout>
