@@ -6,15 +6,15 @@ function WatchInfo() {
     var self = this, model = this.model, form = this;
     
     // TODO : place your code here
+    model.params.lastName = "%%";
+    model.qSearchTeacher.requery();
 
     function searchActionPerformed(evt) {//GEN-FIRST:event_searchActionPerformed
-        // TODO Добавьте свой код:
-        self.model.params.rname = "%" + self.textField.text + "%";
-        self.model.qAll.requery();
+        model.params.lastName = '%' + self.textField.text + '%';
+        model.qSearchTeacher.requery();
     }//GEN-LAST:event_searchActionPerformed
 
     function textFieldActionPerformed(evt) {//GEN-FIRST:event_textFieldActionPerformed
-        // TODO Добавьте свой код:
         
     }//GEN-LAST:event_textFieldActionPerformed
 }
