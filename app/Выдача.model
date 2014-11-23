@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-  <entity Name="teacherInform" Title="" entityHeight="133" entityIconified="false" entityId="141673356924808" entityLocationX="413" entityLocationY="6" entityWidth="150" queryId="TeacherInform" tableName="" tableSchemaName=""/>
-  <entity Name="qCorpus" Title="" entityHeight="71" entityIconified="false" entityId="141673360789149" entityLocationX="204" entityLocationY="107" entityWidth="150" queryId="qCorpus" tableName="" tableSchemaName=""/>
-  <entity Name="qSTATUS" Title="" entityHeight="108" entityIconified="false" entityId="141673470363958" entityLocationX="200" entityLocationY="199" entityWidth="150" queryId="qSTATUS" tableName="" tableSchemaName=""/>
-  <entity Name="dates" Title="" entityHeight="134" entityIconified="false" entityId="141673402780971" entityLocationX="416" entityLocationY="165" entityWidth="150" queryId="Dates" tableName="" tableSchemaName=""/>
-  <entity Name="кафедры" Title="" entityHeight="67" entityIconified="false" entityId="141673300263146" entityLocationX="204" entityLocationY="8" entityWidth="150" queryId="Кафедры" tableName="" tableSchemaName=""/>
-  <referenceRelation leftEntityFieldName="teacher_id" leftEntityId="141673402780971" rightEntityFieldName="teacher_id" rightEntityId="141673356924808"/>
-  <referenceRelation leftEntityFieldName="cath_id" leftEntityId="141673356924808" rightEntityFieldName="cath_id" rightEntityId="141673300263146"/>
-  <referenceRelation leftEntityFieldName="keystatus_id" leftEntityId="141673402780971" rightEntityFieldName="keystatus_id" rightEntityId="141673470363958"/>
-  <referenceRelation leftEntityFieldName="room_id" leftEntityId="141673402780971" rightEntityFieldName="room_id" rightEntityId="141673470363958"/>
+  <entity Name="кафедры" Title="" entityHeight="200" entityIconified="false" entityId="141674752218888" entityLocationX="66" entityLocationY="268" entityWidth="150" queryId="Кафедры" tableName="" tableSchemaName=""/>
+  <entity Name="qOnlyState" Title="" entityHeight="200" entityIconified="false" entityId="141674626790891" entityLocationX="614" entityLocationY="378" entityWidth="150" queryId="qOnlyState" tableName="" tableSchemaName=""/>
+  <entity Name="qKeysInfo" Title="" entityHeight="200" entityIconified="false" entityId="141674607163063" entityLocationX="552" entityLocationY="118" entityWidth="150" queryId="qKeysInfo" tableName="" tableSchemaName=""/>
+  <entity Name="qOnlyRoom" Title="" entityHeight="200" entityIconified="false" entityId="141674641989833" entityLocationX="271" entityLocationY="270" entityWidth="150" queryId="qOnlyRoom" tableName="" tableSchemaName=""/>
+  <entity Name="teacherInform" Title="" entityHeight="200" entityIconified="false" entityId="141674596323692" entityLocationX="278" entityLocationY="26" entityWidth="150" queryId="TeacherInform" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="cath" leftEntityId="141674596323692" rightEntityFieldName="cath_id" rightEntityId="141674752218888"/>
+  <referenceRelation leftEntityFieldName="teacher" leftEntityId="141674607163063" rightEntityFieldName="teacher_id" rightEntityId="141674596323692"/>
+  <referenceRelation leftEntityFieldName="keystatus" leftEntityId="141674607163063" rightEntityFieldName="keystatus_id" rightEntityId="141674626790891"/>
+  <referenceRelation leftEntityFieldName="room" leftEntityId="141674607163063" rightEntityFieldName="room_id" rightEntityId="141674641989833"/>
 </datamodel>

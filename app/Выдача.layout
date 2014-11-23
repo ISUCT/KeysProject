@@ -18,87 +18,108 @@
   <widget horizontalAlignment="0" name="Корпус" parent="Form" prefHeight="24px" prefWidth="144px" text="Корпус" type="LabelDesignInfo">
     <constraints height="24px" right="44px" top="60px" type="MarginConstraintsDesignInfo" width="144px"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="100px" prefWidth="576px" type="DbGridDesignInfo">
-    <column name="colDatein">
-      <columnsDatasource/>
-      <columnsDisplayField/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <controlInfo classHint="DbDateDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141673402780971" fieldName="datein"/>
-    </column>
-    <column name="colRoom_id">
-      <columnsDatasource/>
-      <columnsDisplayField/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
-        <valueField entityId="141673470363958" fieldName="room_id"/>
-        <displayField entityId="141673470363958" fieldName="rnumber"/>
-      </controlInfo>
-      <datamodelElement entityId="141673402780971" fieldName="room_id"/>
-    </column>
-    <column name="colKeystatus_id">
-      <columnsDatasource/>
-      <columnsDisplayField/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
-        <valueField entityId="141673470363958" fieldName="keystatus_id"/>
-        <displayField entityId="141673470363958" fieldName="status"/>
-      </controlInfo>
-      <datamodelElement entityId="141673402780971" fieldName="keystatus_id"/>
-    </column>
-    <treeDesignInfo/>
-    <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="141673402780971" field="false"/>
-    </rowsColumnsDesignInfo>
-    <constraints height="100px" left="48px" top="156px" type="MarginConstraintsDesignInfo" width="576px"/>
-  </widget>
   <widget name="modelCombo" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
-    <valueField entityId="141673300263146" fieldName="cath_id"/>
-    <displayField entityId="141673300263146" fieldName="cath_name"/>
-    <datamodelElement entityId="141673300263146" fieldName="cath_name"/>
+    <valueField entityId="141674752218888" fieldName="cath_id"/>
+    <displayField entityId="141674752218888" fieldName="cath_name"/>
+    <datamodelElement entityId="141674752218888" fieldName="cath_id"/>
     <constraints height="20px" left="372px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
   </widget>
   <widget name="modelCombo1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
-    <valueField entityId="141673356924808" fieldName="teacher_id"/>
-    <displayField entityId="141673356924808" fieldName="lastname"/>
-    <datamodelElement entityId="141673356924808" fieldName="lastname"/>
+    <valueField entityId="141674596323692" fieldName="teacher_id"/>
+    <displayField entityId="141674596323692" fieldName="lastname"/>
+    <datamodelElement entityId="141674596323692" fieldName="teacher_id"/>
     <constraints height="20px" left="48px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
   </widget>
   <widget name="modelCombo2" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
-    <valueField entityId="141673356924808" fieldName="teacher_id"/>
-    <displayField entityId="141673356924808" fieldName="firstname"/>
-    <datamodelElement entityId="141673356924808" fieldName="firstname"/>
+    <valueField entityId="141674596323692" fieldName="teacher_id"/>
+    <displayField entityId="141674596323692" fieldName="firstname"/>
+    <datamodelElement entityId="141674596323692" fieldName="teacher_id"/>
     <constraints height="20px" left="204px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
   </widget>
   <widget name="modelCombo3" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
     <valueField entityId="141673360789149" fieldName="corpus_id"/>
     <displayField entityId="141673360789149" fieldName="corp_name"/>
-    <datamodelElement entityId="141673360789149" fieldName="corp_name"/>
+    <datamodelElement entityId="141674641989833" fieldName="corpus"/>
     <constraints height="20px" right="64px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="156px" prefWidth="588px" type="DbGridDesignInfo">
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="141674607163063" field="false"/>
+    </rowsColumnsDesignInfo>
+    <column name="Фамилия">
+      <datamodelElement entityId="141674607163063" fieldName="teacher"/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141674596323692" fieldName="teacher_id"/>
+        <displayField entityId="141674596323692" fieldName="lastname"/>
+      </controlInfo>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="colDatein">
+      <datamodelElement entityId="141674607163063" fieldName="datein"/>
+      <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="colRoom">
+      <datamodelElement entityId="141674607163063" fieldName="room"/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141674641989833" fieldName="room_id"/>
+        <displayField entityId="141674641989833" fieldName="rnumber"/>
+      </controlInfo>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="colKeystatus">
+      <datamodelElement entityId="141674607163063" fieldName="keystatus"/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141674626790891" fieldName="keystatus_id"/>
+        <displayField entityId="141674626790891" fieldName="status"/>
+      </controlInfo>
+      <columnsDisplayField/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <treeDesignInfo/>
+    <constraints height="156px" left="48px" top="132px" type="MarginConstraintsDesignInfo" width="588px"/>
+  </widget>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="65px" text="button" type="ButtonDesignInfo">
+    <constraints bottom="35px" height="23px" left="360px" type="MarginConstraintsDesignInfo" width="65px"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>
