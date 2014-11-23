@@ -8,10 +8,10 @@ function Статус_ключа() {
     
     // TODO : place your code here
 
-    function button2ActionPerformed(evt) {//GEN-FIRST:event_button2ActionPerformed
+    function saveActionPerformed(evt) {//GEN-FIRST:event_saveActionPerformed
         // TODO Добавьте свой код:
-        model.save();
-    }//GEN-LAST:event_button2ActionPerformed
+        self.model.save();
+    }//GEN-LAST:event_saveActionPerformed
 
     function button1ActionPerformed(evt) {//GEN-FIRST:event_button1ActionPerformed
         // TODO Добавьте свой код:

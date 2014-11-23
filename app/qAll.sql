@@ -4,7 +4,9 @@
  * @name qAll
  * @public
  */ 
-Select * 
+Select firstname, lastname, middlename
+, cath_name, phonenumber, corp_name
+, rnumber, status 
 From TEACHERKEY t1
 , CATH t
 , CORPUS t2
@@ -13,3 +15,4 @@ From TEACHERKEY t1
  and t4.room_id = t1.room_id
  Inner Join TEACHER t5 on t5.teacher_id = t1.teacher_id
  and t.cath_id = t5.cath_id
+ Where t5.lastname like :paramTeacher
