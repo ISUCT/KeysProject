@@ -15,6 +15,8 @@ function Edit() {
 
     function CorpusInfoActionPerformed(evt) {//GEN-FIRST:event_CorpusInfoActionPerformed
         // TODO Добавьте свой код:
+        var CorpusInfo = new Корпус();
+        CorpusInfo.show();
     }//GEN-LAST:event_CorpusInfoActionPerformed
 
     function TeachInfoActionPerformed(evt) {//GEN-FIRST:event_TeachInfoActionPerformed
@@ -22,4 +24,17 @@ function Edit() {
         var TeachInfo = new Преподаватели();
         TeachInfo.show();
     }//GEN-LAST:event_TeachInfoActionPerformed
+
+    function RoomInfoActionPerformed(evt) {//GEN-FIRST:event_RoomInfoActionPerformed
+        // TODO Добавьте свой код:
+        var RoomInfo = new Аудитории();
+        RoomInfo.show();
+    }//GEN-LAST:event_RoomInfoActionPerformed
+
+    function StatusInfoActionPerformed(evt) {//GEN-FIRST:event_StatusInfoActionPerformed
+        // TODO Добавьте свой код:
+        var StatusInfo = new Статус_ключа();
+        StatusInfo.show();
+    
+    }//GEN-LAST:event_StatusInfoActionPerformed
 }

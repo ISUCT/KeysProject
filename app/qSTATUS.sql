@@ -2,6 +2,8 @@
  *
  * @author Пользователь
  * @name qSTATUS
+ * @public
  */ 
-Select * 
+Select status, number,  
 From KEYSTATUS t1
+, ROOM t

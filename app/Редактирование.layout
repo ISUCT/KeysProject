@@ -5,10 +5,10 @@
   <widget actionPerformed="CathInfoActionPerformed" name="CathInfo" parent="Form" prefHeight="36px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints height="36px" left="324px" top="204px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
-  <widget name="StatusInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
+  <widget actionPerformed="StatusInfoActionPerformed" name="StatusInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints height="35px" left="324px" top="156px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
-  <widget name="RoomInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
+  <widget actionPerformed="RoomInfoActionPerformed" name="RoomInfo" parent="Form" prefHeight="35px" prefWidth="120px" text="Редактировать" type="ButtonDesignInfo">
     <constraints height="35px" left="324px" top="108px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
   <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="264px" text="Редактирование данных" type="LabelDesignInfo">
