@@ -24,37 +24,38 @@
     <easFont name="Tahoma" size="18" style="2"/>
   </widget>
   <widget name="modelCombo" parent="Form" prefHeight="24px" prefWidth="120px" type="DbComboDesignInfo">
-    <valueField entityId="141674752218888" fieldName="cath_id"/>
     <displayField entityId="141674752218888" fieldName="cath_name"/>
+    <valueField entityId="141674752218888" fieldName="cath_id"/>
     <datamodelElement entityId="141674752218888" fieldName="cath_id"/>
     <constraints height="24px" left="432px" top="96px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
   <widget name="modelCombo1" parent="Form" prefHeight="24px" prefWidth="120px" type="DbComboDesignInfo">
-    <valueField entityId="141674596323692" fieldName="teacher_id"/>
     <displayField entityId="141674596323692" fieldName="lastname"/>
+    <valueField entityId="141674596323692" fieldName="teacher_id"/>
     <datamodelElement entityId="141674596323692" fieldName="teacher_id"/>
     <constraints height="24px" left="48px" top="96px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
   <widget name="modelCombo2" parent="Form" prefHeight="24px" prefWidth="120px" type="DbComboDesignInfo">
-    <valueField entityId="141674596323692" fieldName="teacher_id"/>
     <displayField entityId="141674596323692" fieldName="firstname"/>
+    <valueField entityId="141674596323692" fieldName="teacher_id"/>
     <datamodelElement entityId="141674596323692" fieldName="teacher_id"/>
     <constraints height="24px" left="228px" top="96px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
   <widget name="modelCombo3" parent="Form" prefHeight="24px" prefWidth="120px" type="DbComboDesignInfo">
-    <valueField entityId="141673360789149" fieldName="corpus_id"/>
     <displayField entityId="141673360789149" fieldName="corp_name"/>
+    <valueField entityId="141673360789149" fieldName="corpus_id"/>
     <datamodelElement entityId="141674641989833" fieldName="corpus"/>
     <constraints height="24px" left="624px" top="96px" type="MarginConstraintsDesignInfo" width="120px"/>
   </widget>
   <widget name="modelGrid" parent="Form" prefHeight="173px" prefWidth="606px" type="DbGridDesignInfo">
     <column name="Фамилия">
       <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
-        <valueField entityId="141674596323692" fieldName="teacher_id"/>
-        <displayField entityId="141674596323692" fieldName="lastname"/>
+        <displayField entityId="141676109041177" fieldName="lastname"/>
+        <valueField entityId="141676109041177" fieldName="teacher_id"/>
       </controlInfo>
       <datamodelElement entityId="141674607163063" fieldName="teacher"/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -62,14 +63,14 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <columnsDisplayField/>
     </column>
     <column name="Время">
       <controlInfo classHint="DbDateDesignInfo" dateFormat="dd.MM.yyyy HH:mm:ss" name="view" prefHeight="0px" prefWidth="0px"/>
       <datamodelElement entityId="141674607163063" fieldName="datein"/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -77,17 +78,17 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <columnsDisplayField/>
     </column>
     <column name="Номер аудитории">
       <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
-        <valueField entityId="141674641989833" fieldName="room_id"/>
         <displayField entityId="141674641989833" fieldName="rnumber"/>
+        <valueField entityId="141674641989833" fieldName="room_id"/>
       </controlInfo>
       <datamodelElement entityId="141674607163063" fieldName="room"/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -95,17 +96,17 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <columnsDisplayField/>
     </column>
     <column name="Статус">
       <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
-        <valueField entityId="141674626790891" fieldName="keystatus_id"/>
         <displayField entityId="141674626790891" fieldName="status"/>
+        <valueField entityId="141674626790891" fieldName="keystatus_id"/>
       </controlInfo>
       <datamodelElement entityId="141674607163063" fieldName="keystatus"/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -113,9 +114,8 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <columnsDisplayField/>
     </column>
     <rowsColumnsDesignInfo>
       <rowsDatasource entityId="141674607163063" field="false"/>
@@ -126,6 +126,12 @@
   <widget actionPerformed="buttonActionPerformed" backgroundColor="#99ccff" foregroundColor="#000099" name="button" parent="Form" prefHeight="48px" prefWidth="120px" text="Добавить" type="ButtonDesignInfo">
     <constraints bottom="32px" height="48px" left="48px" type="MarginConstraintsDesignInfo" width="120px"/>
     <easFont name="Tahoma" size="18"/>
+  </widget>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="30px" prefWidth="68px" text="button1" type="ButtonDesignInfo">
+    <constraints height="30px" right="70px" top="132px" type="MarginConstraintsDesignInfo" width="68px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="30px" prefWidth="68px" text="button2" type="ButtonDesignInfo">
+    <constraints bottom="43px" height="30px" left="492px" type="MarginConstraintsDesignInfo" width="68px"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>

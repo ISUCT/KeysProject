@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="547px">
+  <widget name="modelGrid" parent="Form" prefHeight="180px" prefWidth="528px" type="DbGridDesignInfo">
+    <rowsColumnsDesignInfo>
+      <rowsDatasource/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints height="180px" left="12px" top="96px" type="MarginConstraintsDesignInfo" width="528px"/>
+  </widget>
+  <widget actionPerformed="txtUserActionPerformed" name="txtUser" parent="Form" prefHeight="28px" prefWidth="132px" type="TextFieldDesignInfo">
+    <constraints height="28px" left="12px" top="60px" type="MarginConstraintsDesignInfo" width="132px"/>
+  </widget>
+  <widget actionPerformed="txtKeyActionPerformed" name="txtKey" parent="Form" prefHeight="28px" prefWidth="132px" type="TextFieldDesignInfo">
+    <constraints height="28px" left="156px" top="60px" type="MarginConstraintsDesignInfo" width="132px"/>
+  </widget>
+  <layout type="MarginLayoutDesignInfo"/>
+</layout>
