@@ -2,8 +2,8 @@
  *
  * @author Пользователь
  * @name qSTATUS
- * @public
  */ 
-Select rnumber, status, n 
-From ROOM t1
-, KEYSTATUS t
+Select rnumber, corp_name, status 
+From KEYSTATUS t1
+, ROOM t
+, CORPUS t2
