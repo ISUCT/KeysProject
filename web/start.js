@@ -5,8 +5,8 @@ if (!platypus) {
 	var platypus = {};
 }
 platypus.ready = function() {
-	require(['MainForm'], function(){
-		var f = new MainForm();
+	require(['Статус_ключа'], function(){
+		var f = new Статус_ключа();
 		f.show();
 	});
 };

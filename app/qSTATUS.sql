@@ -4,6 +4,6 @@
  * @name qSTATUS
  * @public
  */ 
-Select status, number,  
-From KEYSTATUS t1
-, ROOM t
+Select rnumber, status, n 
+From ROOM t1
+, KEYSTATUS t

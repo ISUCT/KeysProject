@@ -1,6 +1,7 @@
 /**
  * 
  * @author ксюша
+ * @public
  */
 function Статус_ключа() {
     var self = this, model = this.model, form = this;

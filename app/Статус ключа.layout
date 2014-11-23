@@ -6,12 +6,22 @@
     <constraints height="24px" left="72px" top="12px" type="MarginConstraintsDesignInfo" width="432px"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="528px" type="DbGridDesignInfo">
-    <column name="Статус ключа">
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141665893414092" fieldName="status"/>
-      <columnsDatasource/>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="69px" height="23px" left="360px" type="MarginConstraintsDesignInfo" width="89px"/>
+  </widget>
+  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="21px" height="23px" right="12px" type="MarginConstraintsDesignInfo" width="96px"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="168px" prefWidth="528px" type="DbGridDesignInfo">
+    <treeDesignInfo/>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="141673127681783" field="false"/>
+    </rowsColumnsDesignInfo>
+    <column name="colRnumber">
       <columnsDisplayField/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141673127681783" fieldName="rnumber"/>
+      <columnsDatasource/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -22,17 +32,37 @@
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
     </column>
-    <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="141665893414092" field="false"/>
-    </rowsColumnsDesignInfo>
-    <treeDesignInfo/>
-    <constraints height="192px" left="24px" top="60px" type="MarginConstraintsDesignInfo" width="528px"/>
-  </widget>
-  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
-    <constraints bottom="69px" height="23px" left="360px" type="MarginConstraintsDesignInfo" width="89px"/>
-  </widget>
-  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
-    <constraints bottom="21px" height="23px" right="12px" type="MarginConstraintsDesignInfo" width="96px"/>
+    <column name="colKeystatus">
+      <columnsDisplayField/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141673127681783" fieldName="status"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <column name="colCorpus_id">
+      <columnsDisplayField/>
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141673127681783" fieldName="corpus_id"/>
+      <columnsDatasource/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+    </column>
+    <constraints height="168px" left="24px" top="84px" type="MarginConstraintsDesignInfo" width="528px"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>
