@@ -7,11 +7,14 @@
     <easFont name="Tahoma" size="18"/>
   </widget>
   <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="528px" type="DbGridDesignInfo">
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="141675081905293" field="false"/>
+    </rowsColumnsDesignInfo>
     <column name="Номер">
+      <datamodelElement entityId="141675081905293" fieldName="rnumber"/>
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141666118780024" fieldName="number"/>
-      <columnsDatasource/>
       <columnsDisplayField/>
+      <columnsDatasource/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -23,10 +26,10 @@
       </headerStyle>
     </column>
     <column name="Тип">
+      <datamodelElement entityId="141675081905293" fieldName="type_r"/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141666118780024" fieldName="type"/>
-      <columnsDatasource/>
       <columnsDisplayField/>
+      <columnsDatasource/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -38,10 +41,13 @@
       </headerStyle>
     </column>
     <column name="Название корпуса">
-      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141666118780024" fieldName="name"/>
-      <columnsDatasource/>
+      <datamodelElement entityId="141675081905293" fieldName="corpus"/>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141675081905293" fieldName="corp_name"/>
+        <displayField entityId="141675081905293" fieldName="corp_name"/>
+      </controlInfo>
       <columnsDisplayField/>
+      <columnsDatasource/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -52,9 +58,6 @@
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
     </column>
-    <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="141666118780024" field="false"/>
-    </rowsColumnsDesignInfo>
     <treeDesignInfo/>
     <constraints height="192px" left="44px" top="80px" type="MarginConstraintsDesignInfo" width="528px"/>
   </widget>

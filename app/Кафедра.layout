@@ -4,9 +4,11 @@
     <easFont name="Tahoma" size="18"/>
   </widget>
   <widget name="modelGrid" parent="Form" prefHeight="120px" prefWidth="336px" type="DbGridDesignInfo">
-    <treeDesignInfo/>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="141666167575869" field="false"/>
+    </rowsColumnsDesignInfo>
     <column name="colName">
-      <datamodelElement entityId="141666167575869" fieldName="name"/>
+      <datamodelElement entityId="141675059702346" fieldName="cath_name"/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDisplayField/>
       <columnsDatasource/>
@@ -20,9 +22,7 @@
         <nativeFont name="Tahoma" size="11"/>
       </headerStyle>
     </column>
-    <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="141666167575869" field="false"/>
-    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
     <constraints bottom="108px" left="36px" right="28px" top="72px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <widget actionPerformed="deleteActionPerformed" name="delete" parent="Form" prefHeight="23px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">

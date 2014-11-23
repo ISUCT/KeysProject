@@ -5,8 +5,8 @@ if (!platypus) {
 	var platypus = {};
 }
 platypus.ready = function() {
-	require(['Vidacha'], function(){
-		var f = new Vidacha();
+	require(['MainForm'], function(){
+		var f = new MainForm();
 		f.show();
 	});
 };
