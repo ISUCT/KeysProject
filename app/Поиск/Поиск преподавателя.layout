@@ -3,7 +3,7 @@
     <constraints height="36px" left="168px" top="12px" type="MarginConstraintsDesignInfo" width="204px"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="124px" prefWidth="468px" type="DbGridDesignInfo">
+  <widget mouseClicked="modelGridMouseClicked" name="modelGrid" parent="Form" prefHeight="124px" prefWidth="468px" type="DbGridDesignInfo">
     <rowsColumnsDesignInfo>
       <rowsDatasource entityId="141675726359950" field="false"/>
     </rowsColumnsDesignInfo>
@@ -96,6 +96,12 @@
   </widget>
   <widget name="label1" parent="Form" prefHeight="24px" prefWidth="168px" text="Поиск по фамилии" type="LabelDesignInfo">
     <constraints height="24px" left="180px" top="192px" type="MarginConstraintsDesignInfo" width="168px"/>
+  </widget>
+  <widget actionPerformed="btnOkActionPerformed" name="btnOk" parent="Form" prefHeight="30px" prefWidth="60px" text="Ок" type="ButtonDesignInfo">
+    <constraints bottom="43px" height="30px" left="348px" type="MarginConstraintsDesignInfo" width="60px"/>
+  </widget>
+  <widget actionPerformed="btnCancelActionPerformed" name="btnCancel" parent="Form" prefHeight="30px" prefWidth="68px" text="Отмена" type="ButtonDesignInfo">
+    <constraints bottom="43px" height="30px" right="26px" type="MarginConstraintsDesignInfo" width="68px"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>

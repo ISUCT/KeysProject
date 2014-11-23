@@ -17,4 +17,16 @@ function WatchInfo() {
     function textFieldActionPerformed(evt) {//GEN-FIRST:event_textFieldActionPerformed
         
     }//GEN-LAST:event_textFieldActionPerformed
+
+    function btnCancelActionPerformed(evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        self.close();
+    }//GEN-LAST:event_btnCancelActionPerformed
+
+    function btnOkActionPerformed(evt) {//GEN-FIRST:event_btnOkActionPerformed
+        
+    }//GEN-LAST:event_btnOkActionPerformed
+
+    function modelGridMouseClicked(evt) {//GEN-FIRST:event_modelGridMouseClicked
+        self.close(model.qSearchTeacher.cursor.teacher_id);
+    }//GEN-LAST:event_modelGridMouseClicked
 }
