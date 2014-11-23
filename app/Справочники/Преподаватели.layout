@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="267px" prefWidth="771px">
-  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="597px" text="Данные о преподавателях" type="LabelDesignInfo">
-    <constraints height="36px" left="96px" right="78px" top="12px" type="MarginConstraintsDesignInfo"/>
-    <easFont name="Tahoma" size="18"/>
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="449px" prefWidth="839px">
+  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="48px" prefWidth="665px" text="Данные о преподавателях" type="LabelDesignInfo">
+    <constraints height="48px" left="84px" right="90px" top="12px" type="MarginConstraintsDesignInfo"/>
+    <easFont name="Tahoma" size="24"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="120px" prefWidth="747px" type="DbGridDesignInfo">
+  <widget name="modelGrid" parent="Form" prefHeight="228px" prefWidth="780px" type="DbGridDesignInfo">
     <column name="Имя">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141666471339766" fieldName="firstname"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -17,12 +17,12 @@
       <headerStyle>
         <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="141666471339766" fieldName="firstname"/>
+      <columnsDisplayField/>
     </column>
     <column name="Фамилия">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141666471339766" fieldName="lastname"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -32,12 +32,12 @@
       <headerStyle>
         <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="141666471339766" fieldName="lastname"/>
+      <columnsDisplayField/>
     </column>
     <column name="Отчество">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141666471339766" fieldName="middlename"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -47,15 +47,15 @@
       <headerStyle>
         <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="141666471339766" fieldName="middlename"/>
+      <columnsDisplayField/>
     </column>
-    <column name="column">
+    <column name="Кафедра">
       <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
         <valueField entityId="141675609970300" fieldName="cath_id"/>
         <displayField entityId="141675609970300" fieldName="cath_name"/>
       </controlInfo>
+      <datamodelElement entityId="141666471339766" fieldName="cath"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -63,14 +63,14 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Ubuntu" size="15"/>
+        <nativeFont name="Dialog" size="15"/>
       </headerStyle>
-      <datamodelElement entityId="141666471339766" fieldName="cath"/>
+      <columnsDisplayField/>
     </column>
     <column name="Номер Телефона">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141666471339766" fieldName="phonenumber"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -80,22 +80,25 @@
       <headerStyle>
         <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="141666471339766" fieldName="phonenumber"/>
+      <columnsDisplayField/>
     </column>
     <rowsColumnsDesignInfo>
       <rowsDatasource entityId="141666471339766" field="false"/>
     </rowsColumnsDesignInfo>
     <treeDesignInfo/>
-    <constraints bottom="87px" left="12px" right="12px" top="60px" type="MarginConstraintsDesignInfo"/>
+    <constraints bottom="149px" left="24px" right="35px" top="72px" type="MarginConstraintsDesignInfo"/>
   </widget>
-  <widget actionPerformed="SaveActionPerformed" name="Save" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
-    <constraints bottom="16px" height="23px" right="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="SaveActionPerformed" backgroundColor="#99ff99" foregroundColor="#006600" name="Save" parent="Form" prefHeight="36px" prefWidth="120px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="29px" height="36px" right="35px" type="MarginConstraintsDesignInfo" width="120px"/>
+    <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget actionPerformed="DeleteActionPerformed" name="Delete" parent="Form" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
-    <constraints bottom="52px" height="23px" right="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="DeleteActionPerformed" backgroundColor="#ffcccc" foregroundColor="#660000" name="Delete" parent="Form" prefHeight="36px" prefWidth="120px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="89px" height="36px" right="35px" type="MarginConstraintsDesignInfo" width="120px"/>
+    <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget actionPerformed="addActionPerformed" name="add" parent="Form" prefHeight="23px" prefWidth="107px" text="Добавить" type="ButtonDesignInfo">
-    <constraints bottom="52px" height="23px" left="384px" type="MarginConstraintsDesignInfo" width="107px"/>
+  <widget actionPerformed="addActionPerformed" backgroundColor="#99ccff" foregroundColor="#000099" name="add" parent="Form" prefHeight="36px" prefWidth="120px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="89px" height="36px" left="24px" type="MarginConstraintsDesignInfo" width="120px"/>
+    <easFont name="Tahoma" size="18"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>

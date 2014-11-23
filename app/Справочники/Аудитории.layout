@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="409px" prefWidth="644px">
-  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="24px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
-    <constraints bottom="61px" height="24px" right="56px" type="MarginConstraintsDesignInfo" width="96px"/>
-  </widget>
-  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="24px" prefWidth="432px" text="Информация об аудиториях" type="LabelDesignInfo">
-    <constraints height="24px" left="92px" top="32px" type="MarginConstraintsDesignInfo" width="432px"/>
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="486px" prefWidth="839px">
+  <widget actionPerformed="button1ActionPerformed" backgroundColor="#99ccff" foregroundColor="#000099" name="button1" parent="Form" prefHeight="48px" prefWidth="129px" text="Добавить" type="ButtonDesignInfo">
+    <constraints height="48px" left="48px" top="324px" type="MarginConstraintsDesignInfo" width="129px"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="528px" type="DbGridDesignInfo">
+  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="24px" prefWidth="568px" text="Информация об аудиториях" type="LabelDesignInfo">
+    <constraints height="24px" left="144px" top="24px" type="MarginConstraintsDesignInfo" width="568px"/>
+    <easFont name="Tahoma" size="24"/>
+  </widget>
+  <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="760px" type="DbGridDesignInfo">
     <column name="Номер">
       <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141675081905293" fieldName="rnumber"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -20,12 +21,12 @@
       <headerStyle>
         <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="141675081905293" fieldName="rnumber"/>
+      <columnsDisplayField/>
     </column>
     <column name="Тип">
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141675081905293" fieldName="type"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -35,15 +36,15 @@
       <headerStyle>
         <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="141675081905293" fieldName="type"/>
+      <columnsDisplayField/>
     </column>
     <column name="Название корпуса">
       <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
         <valueField entityId="141675563520620" fieldName="corpus_id"/>
         <displayField entityId="141675563520620" fieldName="corp_name"/>
       </controlInfo>
+      <datamodelElement entityId="141675081905293" fieldName="corpus"/>
       <columnsDatasource/>
-      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -53,19 +54,21 @@
       <headerStyle>
         <nativeFont name="Dialog" size="11"/>
       </headerStyle>
-      <datamodelElement entityId="141675081905293" fieldName="corpus"/>
+      <columnsDisplayField/>
     </column>
     <rowsColumnsDesignInfo>
       <rowsDatasource entityId="141675081905293" field="false"/>
     </rowsColumnsDesignInfo>
     <treeDesignInfo/>
-    <constraints height="192px" left="44px" top="80px" type="MarginConstraintsDesignInfo" width="528px"/>
+    <constraints height="192px" left="44px" top="80px" type="MarginConstraintsDesignInfo" width="760px"/>
   </widget>
-  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="24px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
-    <constraints bottom="61px" height="24px" left="372px" type="MarginConstraintsDesignInfo" width="89px"/>
+  <widget actionPerformed="buttonActionPerformed" backgroundColor="#ffcccc" foregroundColor="#990000" name="button" parent="Form" prefHeight="48px" prefWidth="144px" text="Удалить" type="ButtonDesignInfo">
+    <constraints height="48px" right="35px" top="324px" type="MarginConstraintsDesignInfo" width="144px"/>
+    <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
-    <constraints bottom="26px" height="23px" right="56px" type="MarginConstraintsDesignInfo" width="96px"/>
+  <widget actionPerformed="button2ActionPerformed" backgroundColor="#ccffcc" foregroundColor="#339900" name="button2" parent="Form" prefHeight="48px" prefWidth="144px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="30px" height="48px" right="35px" type="MarginConstraintsDesignInfo" width="144px"/>
+    <easFont name="Tahoma" size="18"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>
