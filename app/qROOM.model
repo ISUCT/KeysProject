@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
   <entity Title="" entityHeight="200" entityIconified="false" entityId="141666103231417" entityLocationX="173" entityLocationY="13" entityWidth="150" tableAlias="t" tableName="CORPUS" tableSchemaName=""/>
-<<<<<<< HEAD
   <entity Title="" entityHeight="200" entityIconified="false" entityId="141666102719092" entityLocationX="398" entityLocationY="16" entityWidth="150" tableAlias="t1" tableName="ROOM" tableSchemaName=""/>
-=======
-  <entity Title="" entityHeight="200" entityIconified="false" entityId="141666102719092" entityLocationX="488" entityLocationY="7" entityWidth="150" tableAlias="t1" tableName="ROOM" tableSchemaName=""/>
->>>>>>> gui
-  <relation leftEntityFieldName="corpus_id" leftEntityId="141666103231417" rightEntityFieldName="corpus_id" rightEntityId="141666102719092"/>
+<relation leftEntityFieldName="corpus_id" leftEntityId="141666103231417" rightEntityFieldName="corpus_id" rightEntityId="141666102719092"/>
 </datamodel>
