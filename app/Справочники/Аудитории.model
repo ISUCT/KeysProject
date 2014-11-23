@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-  <entity Name="qOnlyRoom" Title="" entityHeight="200" entityIconified="false" entityId="141675081905293" entityLocationX="213" entityLocationY="13" entityWidth="150" queryId="qOnlyRoom" tableName="" tableSchemaName=""/>
+  <entity Name="qCorpus" Title="" entityHeight="200" entityIconified="false" entityId="141675563520620" entityLocationX="507" entityLocationY="66" entityWidth="150" queryId="qCorpus" tableName="" tableSchemaName=""/>
+  <entity Name="qOnlyRoom" Title="" entityHeight="200" entityIconified="false" entityId="141675081905293" entityLocationX="273" entityLocationY="14" entityWidth="150" queryId="qOnlyRoom" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="corpus" leftEntityId="141675081905293" rightEntityFieldName="corpus_id" rightEntityId="141675563520620"/>
 </datamodel>

@@ -1,7 +1,8 @@
 /**
  *
  * @author ксюша
- * @name qOnlyState
+ * @name qOnlyRoom
+ * @public
  */ 
 Select * 
-From KEYSTATUS t1
+From ROOM t1

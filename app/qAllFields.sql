@@ -2,6 +2,7 @@
  *
  * @author ксюша
  * @name qAllField
+ * @public
  */ 
 Select * 
 From ROOM t

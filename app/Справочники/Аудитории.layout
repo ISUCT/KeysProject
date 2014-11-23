@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="409px" prefWidth="644px">
-  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="24px" prefWidth="89px" text="Добавить" type="ButtonDesignInfo">
-    <constraints bottom="73px" height="24px" right="63px" type="MarginConstraintsDesignInfo" width="89px"/>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="24px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="61px" height="24px" right="56px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
   <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="24px" prefWidth="432px" text="Информация об аудиториях" type="LabelDesignInfo">
     <constraints height="24px" left="92px" top="32px" type="MarginConstraintsDesignInfo" width="432px"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
   <widget name="modelGrid" parent="Form" prefHeight="192px" prefWidth="528px" type="DbGridDesignInfo">
+    <column name="Номер">
+      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Dialog" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="141675081905293" fieldName="rnumber"/>
+    </column>
+    <column name="Тип">
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Dialog" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="141675081905293" fieldName="type"/>
+    </column>
+    <column name="Название корпуса">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141675563520620" fieldName="corpus_id"/>
+        <displayField entityId="141675563520620" fieldName="corp_name"/>
+      </controlInfo>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Dialog" size="11"/>
+      </headerStyle>
+      <datamodelElement entityId="141675081905293" fieldName="corpus"/>
+    </column>
     <rowsColumnsDesignInfo>
       <rowsDatasource entityId="141675081905293" field="false"/>
     </rowsColumnsDesignInfo>
-    <column name="Номер">
-      <datamodelElement entityId="141675081905293" fieldName="rnumber"/>
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <columnsDisplayField/>
-      <columnsDatasource/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-    </column>
-    <column name="Тип">
-      <datamodelElement entityId="141675081905293" fieldName="type_r"/>
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <columnsDisplayField/>
-      <columnsDatasource/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-    </column>
-    <column name="Название корпуса">
-      <datamodelElement entityId="141675081905293" fieldName="corpus"/>
-      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
-        <valueField entityId="141675081905293" fieldName="corp_name"/>
-        <displayField entityId="141675081905293" fieldName="corp_name"/>
-      </controlInfo>
-      <columnsDisplayField/>
-      <columnsDatasource/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-    </column>
     <treeDesignInfo/>
     <constraints height="192px" left="44px" top="80px" type="MarginConstraintsDesignInfo" width="528px"/>
   </widget>
-  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
-    <constraints bottom="74px" height="23px" left="372px" type="MarginConstraintsDesignInfo" width="89px"/>
+  <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="24px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
+    <constraints bottom="61px" height="24px" left="372px" type="MarginConstraintsDesignInfo" width="89px"/>
   </widget>
   <widget actionPerformed="button2ActionPerformed" name="button2" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
     <constraints bottom="26px" height="23px" right="56px" type="MarginConstraintsDesignInfo" width="96px"/>

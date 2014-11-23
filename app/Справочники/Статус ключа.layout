@@ -1,57 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="380px" prefWidth="576px">
-  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="23px" prefWidth="89px" text="Добавить" type="ButtonDesignInfo">
-    <constraints bottom="69px" height="23px" right="19px" type="MarginConstraintsDesignInfo" width="89px"/>
+  <widget actionPerformed="button1ActionPerformed" name="button1" parent="Form" prefHeight="23px" prefWidth="96px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="57px" height="23px" right="12px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
   <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="24px" prefWidth="432px" text="Информация о статусе ключа" type="LabelDesignInfo">
     <constraints height="24px" left="72px" top="12px" type="MarginConstraintsDesignInfo" width="432px"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
   <widget actionPerformed="buttonActionPerformed" name="button" parent="Form" prefHeight="23px" prefWidth="89px" text="Удалить" type="ButtonDesignInfo">
-    <constraints bottom="69px" height="23px" left="360px" type="MarginConstraintsDesignInfo" width="89px"/>
+    <constraints bottom="57px" height="23px" left="360px" type="MarginConstraintsDesignInfo" width="89px"/>
   </widget>
   <widget actionPerformed="saveActionPerformed" name="save" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
     <constraints bottom="21px" height="23px" right="12px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="204px" prefWidth="528px" type="DbGridDesignInfo">
-    <treeDesignInfo/>
-    <rowsColumnsDesignInfo>
-      <rowsDatasource entityId="141673329557280" field="false"/>
-    </rowsColumnsDesignInfo>
-    <column name="colRnumber">
-      <columnsDisplayField/>
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141673329557280" fieldName="rnumber"/>
-      <columnsDatasource/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-    </column>
-    <column name="colCorp_name">
-      <columnsDisplayField/>
-      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141673329557280" fieldName="corp_name"/>
-      <columnsDatasource/>
-      <cellsDatasource/>
-      <cellDesignInfo>
-        <rowsKeyField/>
-        <columnsKeyField/>
-        <cellValueField/>
-      </cellDesignInfo>
-      <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
-      </headerStyle>
-    </column>
+  <widget name="modelGrid" opaque="false" parent="Form" prefHeight="228px" prefWidth="528px" showHorizontalLines="false" type="DbGridDesignInfo">
     <column name="colStatus">
-      <columnsDisplayField/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <datamodelElement entityId="141673329557280" fieldName="status"/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -59,10 +24,15 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="141675505263599" fieldName="status"/>
     </column>
-    <constraints bottom="116px" left="24px" right="24px" top="60px" type="MarginConstraintsDesignInfo"/>
+    <rowsColumnsDesignInfo>
+      <rowsDatasource entityId="141675505263599" field="false"/>
+    </rowsColumnsDesignInfo>
+    <treeDesignInfo/>
+    <constraints bottom="92px" left="24px" right="24px" top="60px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>

@@ -1,8 +1,8 @@
 /**
  *
  * @author ксюша
- * @name qKeysInfo
+ * @name qOnlyState
  * @public
  */ 
 Select * 
-From TEACHERKEY t1
+From KEYSTATUS t1

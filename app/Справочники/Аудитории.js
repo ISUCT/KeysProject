@@ -15,12 +15,12 @@ function Аудитории() {
     function buttonActionPerformed(evt) {//GEN-FIRST:event_buttonActionPerformed
         // TODO Добавьте свой код:
         if(confirm("Удалить?")){
-            self.qROOM.deleteRow();
+            model.qOnlyRoom.deleteRow();
         }
     }//GEN-LAST:event_buttonActionPerformed
 
     function button1ActionPerformed(evt) {//GEN-FIRST:event_button1ActionPerformed
         // TODO Добавьте свой код:
-        model.qROOM.insert();
+        model.qOnlyRoom.insert();
     }//GEN-LAST:event_button1ActionPerformed
 }

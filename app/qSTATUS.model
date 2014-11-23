@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
-  <entity Title="" entityHeight="200" entityIconified="false" entityId="141673323049026" entityLocationX="558" entityLocationY="7" entityWidth="150" tableAlias="t2" tableName="CORPUS" tableSchemaName=""/>
-  <entity Title="" entityHeight="200" entityIconified="false" entityId="141673322262416" entityLocationX="348" entityLocationY="10" entityWidth="150" tableAlias="t" tableName="ROOM" tableSchemaName=""/>
-  <entity Title="" entityHeight="200" entityIconified="false" entityId="141673321552478" entityLocationX="172" entityLocationY="8" entityWidth="150" tableAlias="t1" tableName="KEYSTATUS" tableSchemaName=""/>
-</datamodel>

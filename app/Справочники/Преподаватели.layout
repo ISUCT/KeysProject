@@ -1,15 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="309px" prefWidth="624px">
-  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="450px" text="Данные о преподавателях" type="LabelDesignInfo">
+<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="267px" prefWidth="771px">
+  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="36px" prefWidth="597px" text="Данные о преподавателях" type="LabelDesignInfo">
     <constraints height="36px" left="96px" right="78px" top="12px" type="MarginConstraintsDesignInfo"/>
     <easFont name="Tahoma" size="18"/>
   </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="121px" prefWidth="570px" type="DbGridDesignInfo">
-    <treeDesignInfo/>
+  <widget name="modelGrid" parent="Form" prefHeight="120px" prefWidth="747px" type="DbGridDesignInfo">
     <column name="Имя">
-      <datamodelElement entityId="141666471339766" fieldName="firstname"/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <columnsDisplayField/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -17,14 +15,14 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="141666471339766" fieldName="firstname"/>
     </column>
     <column name="Фамилия">
-      <datamodelElement entityId="141666471339766" fieldName="lastname"/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <columnsDisplayField/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -32,14 +30,14 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="141666471339766" fieldName="lastname"/>
     </column>
     <column name="Отчество">
-      <datamodelElement entityId="141666471339766" fieldName="middlename"/>
       <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <columnsDisplayField/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -47,14 +45,32 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="141666471339766" fieldName="middlename"/>
+    </column>
+    <column name="column">
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141675609970300" fieldName="cath_id"/>
+        <displayField entityId="141675609970300" fieldName="cath_name"/>
+      </controlInfo>
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Ubuntu" size="15"/>
+      </headerStyle>
+      <datamodelElement entityId="141666471339766" fieldName="cath"/>
     </column>
     <column name="Номер Телефона">
-      <datamodelElement entityId="141666471339766" fieldName="phonenumber"/>
-      <controlInfo classHint="DbSpinDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
-      <columnsDisplayField/>
+      <controlInfo classHint="DbLabelDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
       <columnsDatasource/>
+      <columnsDisplayField/>
       <cellsDatasource/>
       <cellDesignInfo>
         <rowsKeyField/>
@@ -62,22 +78,24 @@
         <cellValueField/>
       </cellDesignInfo>
       <headerStyle>
-        <nativeFont name="Tahoma" size="11"/>
+        <nativeFont name="Dialog" size="11"/>
       </headerStyle>
+      <datamodelElement entityId="141666471339766" fieldName="phonenumber"/>
     </column>
     <rowsColumnsDesignInfo>
       <rowsDatasource entityId="141666471339766" field="false"/>
     </rowsColumnsDesignInfo>
-    <constraints bottom="128px" left="24px" right="30px" top="60px" type="MarginConstraintsDesignInfo"/>
+    <treeDesignInfo/>
+    <constraints bottom="87px" left="12px" right="12px" top="60px" type="MarginConstraintsDesignInfo"/>
   </widget>
   <widget actionPerformed="SaveActionPerformed" name="Save" parent="Form" prefHeight="23px" prefWidth="96px" text="Сохранить" type="ButtonDesignInfo">
-    <constraints bottom="22px" height="23px" right="24px" type="MarginConstraintsDesignInfo" width="96px"/>
+    <constraints bottom="16px" height="23px" right="24px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
   <widget actionPerformed="DeleteActionPerformed" name="Delete" parent="Form" prefHeight="23px" prefWidth="96px" text="Удалить" type="ButtonDesignInfo">
-    <constraints height="23px" right="24px" top="192px" type="MarginConstraintsDesignInfo" width="96px"/>
+    <constraints bottom="52px" height="23px" right="24px" type="MarginConstraintsDesignInfo" width="96px"/>
   </widget>
-  <widget actionPerformed="addActionPerformed" name="add" parent="Form" prefHeight="23px" prefWidth="83px" text="Добавить" type="ButtonDesignInfo">
-    <constraints height="23px" left="396px" top="192px" type="MarginConstraintsDesignInfo" width="83px"/>
+  <widget actionPerformed="addActionPerformed" name="add" parent="Form" prefHeight="23px" prefWidth="107px" text="Добавить" type="ButtonDesignInfo">
+    <constraints bottom="52px" height="23px" left="384px" type="MarginConstraintsDesignInfo" width="107px"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>
