@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="358px" prefWidth="692px">
-  <widget name="button5" parent="Form" prefHeight="23px" prefWidth="71px" text="Выдать" type="ButtonDesignInfo">
-    <constraints bottom="35px" height="23px" left="396px" type="MarginConstraintsDesignInfo" width="71px"/>
-  </widget>
-  <widget name="button6" parent="Form" prefHeight="23px" prefWidth="71px" text="Отмена" type="ButtonDesignInfo">
-    <constraints bottom="35px" height="23px" left="216px" type="MarginConstraintsDesignInfo" width="71px"/>
+  <widget actionPerformed="saveActionPerformed" name="save" parent="Form" prefHeight="23px" prefWidth="108px" text="Сохранить" type="ButtonDesignInfo">
+    <constraints bottom="11px" height="23px" right="68px" type="MarginConstraintsDesignInfo" width="108px"/>
   </widget>
   <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="14px" prefWidth="192px" text="Окно выдачи ключей" type="LabelDesignInfo">
     <constraints height="14px" left="240px" top="12px" type="MarginConstraintsDesignInfo" width="192px"/>
@@ -21,24 +18,87 @@
   <widget horizontalAlignment="0" name="Корпус" parent="Form" prefHeight="24px" prefWidth="144px" text="Корпус" type="LabelDesignInfo">
     <constraints height="24px" right="44px" top="60px" type="MarginConstraintsDesignInfo" width="144px"/>
   </widget>
-  <widget name="modelFormattedField" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
-    <constraints height="20px" left="48px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
-  </widget>
-  <widget name="modelFormattedField1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
-    <constraints height="20px" left="204px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
-  </widget>
-  <widget name="modelFormattedField2" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
-    <constraints height="20px" left="372px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
-  </widget>
-  <widget name="modelFormattedField3" parent="Form" prefHeight="20px" prefWidth="100px" type="DbLabelDesignInfo">
-    <constraints height="20px" right="64px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
-  </widget>
-  <widget name="modelGrid" parent="Form" prefHeight="100px" prefWidth="396px" type="DbGridDesignInfo">
+  <widget name="modelGrid" parent="Form" prefHeight="100px" prefWidth="576px" type="DbGridDesignInfo">
+    <column name="colDatein">
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <controlInfo classHint="DbDateDesignInfo" name="view" prefHeight="0px" prefWidth="0px"/>
+      <datamodelElement entityId="141673402780971" fieldName="datein"/>
+    </column>
+    <column name="colRoom_id">
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141673470363958" fieldName="room_id"/>
+        <displayField entityId="141673470363958" fieldName="rnumber"/>
+      </controlInfo>
+      <datamodelElement entityId="141673402780971" fieldName="room_id"/>
+    </column>
+    <column name="colKeystatus_id">
+      <columnsDatasource/>
+      <columnsDisplayField/>
+      <cellsDatasource/>
+      <cellDesignInfo>
+        <rowsKeyField/>
+        <columnsKeyField/>
+        <cellValueField/>
+      </cellDesignInfo>
+      <headerStyle>
+        <nativeFont name="Tahoma" size="11"/>
+      </headerStyle>
+      <controlInfo classHint="DbComboDesignInfo" name="view" prefHeight="0px" prefWidth="0px">
+        <valueField entityId="141673470363958" fieldName="keystatus_id"/>
+        <displayField entityId="141673470363958" fieldName="status"/>
+      </controlInfo>
+      <datamodelElement entityId="141673402780971" fieldName="keystatus_id"/>
+    </column>
     <treeDesignInfo/>
     <rowsColumnsDesignInfo>
-      <rowsDatasource/>
+      <rowsDatasource entityId="141673402780971" field="false"/>
     </rowsColumnsDesignInfo>
-    <constraints height="100px" left="144px" top="156px" type="MarginConstraintsDesignInfo" width="396px"/>
+    <constraints height="100px" left="48px" top="156px" type="MarginConstraintsDesignInfo" width="576px"/>
+  </widget>
+  <widget name="modelCombo" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
+    <valueField entityId="141673300263146" fieldName="cath_id"/>
+    <displayField entityId="141673300263146" fieldName="cath_name"/>
+    <datamodelElement entityId="141673300263146" fieldName="cath_name"/>
+    <constraints height="20px" left="372px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCombo1" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
+    <valueField entityId="141673356924808" fieldName="teacher_id"/>
+    <displayField entityId="141673356924808" fieldName="lastname"/>
+    <datamodelElement entityId="141673356924808" fieldName="lastname"/>
+    <constraints height="20px" left="48px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCombo2" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
+    <valueField entityId="141673356924808" fieldName="teacher_id"/>
+    <displayField entityId="141673356924808" fieldName="firstname"/>
+    <datamodelElement entityId="141673356924808" fieldName="firstname"/>
+    <constraints height="20px" left="204px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
+  </widget>
+  <widget name="modelCombo3" parent="Form" prefHeight="20px" prefWidth="100px" type="DbComboDesignInfo">
+    <valueField entityId="141673360789149" fieldName="corpus_id"/>
+    <displayField entityId="141673360789149" fieldName="corp_name"/>
+    <datamodelElement entityId="141673360789149" fieldName="corp_name"/>
+    <constraints height="20px" right="64px" top="96px" type="MarginConstraintsDesignInfo" width="100px"/>
   </widget>
   <layout type="MarginLayoutDesignInfo"/>
 </layout>
