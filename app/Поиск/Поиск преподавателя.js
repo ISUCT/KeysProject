@@ -4,7 +4,7 @@
  */
 function WatchInfo() {
     var self = this, model = this.model, form = this;
-    
+
     // TODO : place your code here
     model.params.lastName = "%%";
     model.qSearchTeacher.requery();
@@ -27,6 +27,8 @@ function WatchInfo() {
     }//GEN-LAST:event_btnOkActionPerformed
 
     function modelGridMouseClicked(evt) {//GEN-FIRST:event_modelGridMouseClicked
-        self.close(model.qSearchTeacher.cursor.teacher_id);
+        if (evt.clickCount > 1) {
+            self.close(model.qSearchTeacher.cursor.teacher_id);
+        }
     }//GEN-LAST:event_modelGridMouseClicked
 }

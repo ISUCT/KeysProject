@@ -3,6 +3,6 @@
     <parameter description="" name="audId" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
   </parameters>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
-  <entity Title="" entityHeight="200" entityIconified="false" entityId="141676601461142" entityLocationX="263" entityLocationY="21" entityWidth="173" queryId="qKeysInfo" tableAlias="q1" tableName="" tableSchemaName=""/>
-  <relation leftEntityId="-1" leftEntityParameterName="audId" rightEntityFieldName="teacherkey_id" rightEntityId="141676601461142"/>
+  <entity Title="" entityHeight="200" entityIconified="false" entityId="141677605354934" entityLocationX="263" entityLocationY="19" entityWidth="150" tableAlias="t1" tableName="ROOM" tableSchemaName=""/>
+  <relation leftEntityId="-1" leftEntityParameterName="audId" rightEntityFieldName="room_id" rightEntityId="141677605354934"/>
 </datamodel>
