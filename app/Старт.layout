@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><layout defaultCloseOperation="2" name="Form" prefHeight="300px" prefWidth="400px" undecorated="true">
-  <widget actionPerformed="KeyExtradActionPerformed" name="KeyExtrad" parent="Form" prefHeight="23px" prefWidth="192px" text="Выдача ключей" type="ButtonDesignInfo">
-    <constraints height="23px" left="96px" top="120px" type="MarginConstraintsDesignInfo" width="192px"/>
-  </widget>
-  <widget actionPerformed="WatchInfoActionPerformed" name="WatchInfo" parent="Form" prefHeight="23px" prefWidth="192px" text="Просмотр информации" type="ButtonDesignInfo">
-    <constraints height="23px" left="96px" top="156px" type="MarginConstraintsDesignInfo" width="192px"/>
-  </widget>
-  <widget actionPerformed="EditActionPerformed" name="Edit" parent="Form" prefHeight="23px" prefWidth="192px" text="Редактирование данных" type="ButtonDesignInfo">
-    <constraints bottom="49px" height="23px" left="96px" type="MarginConstraintsDesignInfo" width="192px"/>
-  </widget>
-  <widget horizontalAlignment="0" name="label" parent="Form" prefHeight="48px" prefWidth="252px" text="Добро пожаловать!" type="LabelDesignInfo">
-    <constraints height="48px" left="72px" top="24px" type="MarginConstraintsDesignInfo" width="252px"/>
-    <easFont name="Times New Roman" size="24"/>
-  </widget>
-  <widget actionPerformed="ReportActionPerformed" name="Report" parent="Form" prefHeight="24px" prefWidth="192px" text="Выдача отчетов" type="ButtonDesignInfo">
-    <constraints height="24px" left="96px" top="192px" type="MarginConstraintsDesignInfo" width="192px"/>
-  </widget>
-  <layout type="MarginLayoutDesignInfo"/>
+<?xml version="1.0" encoding="UTF-8"?><layout title="" undecorated="true" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <Button cursor="0" name="KeyExtrad" parent="view" prefHeight="23px" prefWidth="192px" text="Выдача ключей">
+    <AnchorsPaneConstraints height="23px" left="96px" top="120px" width="192px"/>
+  </Button>
+  <Button cursor="0" name="WatchInfo" parent="view" prefHeight="23px" prefWidth="192px" text="Просмотр информации">
+    <AnchorsPaneConstraints height="23px" left="96px" top="156px" width="192px"/>
+  </Button>
+  <Button cursor="0" name="Edit" parent="view" prefHeight="23px" prefWidth="192px" text="Редактирование данных">
+    <AnchorsPaneConstraints bottom="49px" height="23px" left="96px" width="192px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="48px" prefWidth="252px" text="Добро пожаловать!">
+    <font family="Times New Roman" size="24" style="0"/>
+    <AnchorsPaneConstraints height="48px" left="72px" top="24px" width="252px"/>
+  </Label>
+  <Button cursor="0" name="Report" parent="view" prefHeight="24px" prefWidth="192px" text="Выдача отчетов">
+    <AnchorsPaneConstraints height="24px" left="96px" top="192px" width="192px"/>
+  </Button>
 </layout>
