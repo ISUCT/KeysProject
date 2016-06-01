@@ -11,10 +11,11 @@ define('Launch', ['orm', 'forms', 'ui'], function (Orm, Forms, Ui, ModuleName) {
                 , form = Forms.loadForm(ModuleName, model);
 
 //Вот весь этот код ниже надо приводить в божеский вид примерно так
-//        form.KeyExtrad.onActionPerformed = function (evt) {
-////            var vidWindow = new Vidacha();
-////            vidWindow.show();
-//        };
+        form.KeyExtrad.onActionPerformed = function (evt) {
+            alert("Hello");
+//            var vidWindow = new Vidacha();
+//            vidWindow.show();
+        };
 
         self.show = function () {
             form.show();
