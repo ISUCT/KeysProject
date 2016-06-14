@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="372px" prefWidth="626px"/>
+  <Button cursor="0" name="button2" parent="view" prefHeight="23px" prefWidth="96px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="13px" height="23px" right="50px" width="96px"/>
+  </Button>
+  <Button cursor="0" name="button" parent="view" prefHeight="23px" prefWidth="89px" text="Удалить">
+    <AnchorsPaneConstraints bottom="61px" height="23px" left="372px" width="89px"/>
+  </Button>
+  <ModelGrid cursor="0" data="qCorpus" name="modelGrid" parent="view" prefHeight="192px" prefWidth="528px">
+    <AnchorsPaneConstraints height="192px" left="34px" top="80px" width="528px"/>
+    <ServiceGridColumn name="rows-header-service"/>
+    <ModelGridColumn field="name" name="Название корпуса" title="Название корпуса" width="487px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="24px" prefWidth="432px" text="Информация о корпусах">
+    <font family="Tahoma" size="18" style="0"/>
+    <AnchorsPaneConstraints height="24px" left="82px" top="22px" width="432px"/>
+  </Label>
+  <Button cursor="0" name="button1" parent="view" prefHeight="24px" prefWidth="89px" text="Добавить">
+    <AnchorsPaneConstraints bottom="60px" height="24px" right="57px" width="89px"/>
+  </Button>
+</layout>

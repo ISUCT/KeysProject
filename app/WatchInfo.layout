@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="373px" prefWidth="526px"/>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="36px" prefWidth="204px" text="Просмотр информации">
+    <font family="Tahoma" size="18" style="0"/>
+    <AnchorsPaneConstraints height="36px" left="168px" top="12px" width="204px"/>
+  </Label>
+  <ModelGrid cursor="0" name="modelGrid" parent="view" prefHeight="100px" prefWidth="468px">
+    <AnchorsPaneConstraints height="100px" left="24px" top="82px" width="468px"/>
+    <ServiceGridColumn name="rows-header-service"/>
+  </ModelGrid>
+  <TextField cursor="0" name="textField" parent="view" prefHeight="20px" prefWidth="300px">
+    <AnchorsPaneConstraints bottom="101px" height="20px" left="60px" width="300px"/>
+  </TextField>
+  <Button cursor="0" name="search" parent="view" prefHeight="23px" prefWidth="65px" text="Поиск">
+    <AnchorsPaneConstraints bottom="98px" height="23px" right="65px" width="65px"/>
+  </Button>
+  <Label cursor="0" name="label1" parent="view" prefHeight="24px" prefWidth="168px" text="Поиск по фамилии">
+    <AnchorsPaneConstraints height="24px" left="180px" top="192px" width="168px"/>
+  </Label>
+</layout>

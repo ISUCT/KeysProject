@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <parametersEntity entityHeight="112" entityIconified="false" entityLocationX="12" entityLocationY="12" entityWidth="150"/>
-  <entity Name="кафедры" Title="" entityHeight="200" entityIconified="false" entityId="141666167575869" entityLocationX="179" entityLocationY="10" entityWidth="150" queryId="Кафедры" tableName="" tableSchemaName=""/>
-</datamodel>

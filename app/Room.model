@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="qType" Title="" entityHeight="200" entityIconified="false" entityId="146593537009600" entityLocationX="353" entityLocationY="6" entityWidth="150" queryId="qType" tableName="" tableSchemaName=""/>
+  <entity Name="qFloor" Title="" entityHeight="200" entityIconified="false" entityId="146593540512200" entityLocationX="151" entityLocationY="264" entityWidth="150" queryId="qFloor" tableName="" tableSchemaName=""/>
+  <entity Name="qRooms" Title="" entityHeight="200" entityIconified="false" entityId="146593448981500" entityLocationX="55" entityLocationY="30" entityWidth="150" queryId="qRooms" tableName="" tableSchemaName=""/>
+  <entity Name="qCorpus" Title="" entityHeight="200" entityIconified="false" entityId="146593538781600" entityLocationX="337" entityLocationY="225" entityWidth="150" queryId="qCorpus" tableName="" tableSchemaName=""/>
+  <referenceRelation collectionPropertyName="cfRooms" leftEntityFieldName="floor_id" leftEntityId="146593448981500" rightEntityFieldName="floor_id" rightEntityId="146593540512200" scalarPropertyName="cFloor"/>
+  <referenceRelation collectionPropertyName="ccRooms" leftEntityFieldName="corpus_id" leftEntityId="146593448981500" rightEntityFieldName="corpus_id" rightEntityId="146593538781600" scalarPropertyName="cCorpus"/>
+  <referenceRelation collectionPropertyName="ctRooms" leftEntityFieldName="type" leftEntityId="146593448981500" rightEntityFieldName="type_id" rightEntityId="146593537009600" scalarPropertyName="cType"/>
+</datamodel>

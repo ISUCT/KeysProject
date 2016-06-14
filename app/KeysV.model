@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="dates" Title="" entityHeight="134" entityIconified="false" entityId="141673402780971" entityLocationX="416" entityLocationY="165" entityWidth="150" queryId="Dates" tableName="" tableSchemaName=""/>
+  <entity Name="teacherInform" Title="" entityHeight="133" entityIconified="false" entityId="141673356924808" entityLocationX="413" entityLocationY="6" entityWidth="150" queryId="TeacherInform" tableName="" tableSchemaName=""/>
+  <entity Name="qCorpus" Title="" entityHeight="71" entityIconified="false" entityId="141673360789149" entityLocationX="204" entityLocationY="107" entityWidth="150" queryId="qCorpus" tableName="" tableSchemaName=""/>
+  <entity Name="qSTATUS" Title="" entityHeight="108" entityIconified="false" entityId="141673470363958" entityLocationX="200" entityLocationY="199" entityWidth="150" queryId="qSTATUS" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="teacher_id" leftEntityId="141673402780971" rightEntityFieldName="teacher_id" rightEntityId="141673356924808"/>
+  <referenceRelation leftEntityFieldName="room_id" leftEntityId="141673402780971" rightEntityFieldName="room_id" rightEntityId="141673470363958"/>
+  <referenceRelation leftEntityFieldName="keystatus_id" leftEntityId="141673402780971" rightEntityFieldName="keystatus_id" rightEntityId="141673470363958"/>
+</datamodel>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="328px" prefWidth="644px"/>
+  <Button cursor="0" name="btnAdd" parent="view" prefHeight="24px" prefWidth="89px" text="Добавить">
+    <AnchorsPaneConstraints bottom="6px" height="24px" right="105px" width="89px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="24px" prefWidth="432px" text="Информация об аудиториях">
+    <font family="Arial" size="18" style="0"/>
+    <AnchorsPaneConstraints height="24px" left="90px" right="122px" top="10px"/>
+  </Label>
+  <Button cursor="0" name="btnDelete" parent="view" prefHeight="23px" prefWidth="89px" text="Удалить">
+    <AnchorsPaneConstraints bottom="7px" height="23px" right="195px" width="89px"/>
+  </Button>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="23px" prefWidth="96px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="7px" height="23px" right="8px" width="96px"/>
+  </Button>
+  <ModelGrid cursor="0" data="qRooms" name="modelGrid" parent="view" prefHeight="250px" prefWidth="630px">
+    <AnchorsPaneConstraints height="250px" left="10px" right="4px" top="40px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="rnumber" name="colRnumber" title="colRnumber" width="149px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="cType" name="colType" title="colType" width="149px">
+      <ModelCombo displayField="name_type" displayList="qType"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="cCorpus" name="colCorpus_id" title="colCorpus_id" width="149px">
+      <ModelCombo displayField="corp_name" displayList="qCorpus"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="cFloor" name="colFloor_id" title="colFloor_id" width="148px">
+      <ModelCombo displayField="name" displayList="qFloor"/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>

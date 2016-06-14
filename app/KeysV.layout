@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="358px" prefWidth="692px"/>
+  <Button cursor="0" name="save" parent="view" prefHeight="23px" prefWidth="108px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="11px" height="23px" right="68px" width="108px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="14px" prefWidth="192px" text="Окно выдачи ключей">
+    <font family="Arial" size="14" style="0"/>
+    <AnchorsPaneConstraints height="14px" left="240px" top="12px" width="192px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="0" name="label1" parent="view" prefHeight="26px" prefWidth="144px" text="Фамилия">
+    <AnchorsPaneConstraints height="26px" left="24px" top="60px" width="144px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="0" name="label2" parent="view" prefHeight="24px" prefWidth="144px" text="Имя">
+    <AnchorsPaneConstraints height="24px" left="270px" top="60px" width="144px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="0" name="Корпус" parent="view" prefHeight="24px" prefWidth="144px" text="Корпус">
+    <AnchorsPaneConstraints height="24px" right="44px" top="60px" width="144px"/>
+  </Label>
+  <ModelGrid cursor="0" data="dates" name="modelGrid" parent="view" prefHeight="200px" prefWidth="670px">
+    <AnchorsPaneConstraints height="200px" left="10px" top="120px" width="670px"/>
+    <ServiceGridColumn name="rows-header-service" resizable="true"/>
+    <ModelGridColumn field="datein" name="colDatein" title="colDatein" width="212px">
+      <ModelDate/>
+    </ModelGridColumn>
+    <ModelGridColumn field="room_id" name="colRoom_id" title="colRoom_id" width="212px">
+      <ModelCombo displayField="rnumber" displayList="qSTATUS"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="keystatus_id" name="colKeystatus_id" title="colKeystatus_id" width="211px">
+      <ModelCombo displayField="status" displayList="qSTATUS"/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <ModelCombo cursor="0" data="teacherInform" displayField="lastname" displayList="teacherInform" field="cursor.lastname" name="modelCombo1" parent="view" prefHeight="20px" prefWidth="100px">
+    <AnchorsPaneConstraints height="20px" left="48px" top="86px" width="100px"/>
+  </ModelCombo>
+  <ModelCombo cursor="0" data="teacherInform" displayField="firstname" displayList="teacherInform" field="cursor.firstname" name="modelCombo2" parent="view" prefHeight="20px" prefWidth="100px">
+    <AnchorsPaneConstraints height="20px" left="300px" top="90px" width="100px"/>
+  </ModelCombo>
+  <ModelCombo cursor="0" data="qCorpus" displayField="corp_name" displayList="qCorpus" field="cursor.corp_name" name="modelCombo3" parent="view" prefHeight="20px" prefWidth="100px">
+    <AnchorsPaneConstraints height="20px" right="64px" top="86px" width="100px"/>
+  </ModelCombo>
+</layout>

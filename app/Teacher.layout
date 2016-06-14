@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="309px" prefWidth="624px"/>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="36px" prefWidth="450px" text="Данные о преподавателях">
+    <font family="Arial" size="18" style="0"/>
+    <AnchorsPaneConstraints height="36px" left="96px" right="78px" top="12px"/>
+  </Label>
+  <ModelGrid cursor="0" data="teacherInform" name="modelGrid" parent="view" prefHeight="210px" prefWidth="600px">
+    <AnchorsPaneConstraints height="210px" left="10px" top="50px" width="600px"/>
+    <ServiceGridColumn name="rows-header-service" resizable="true"/>
+    <ModelGridColumn field="firstname" name="Имя" title="Имя" width="113px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lastname" name="Фамилия" title="Фамилия" width="113px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="middlename" name="Отчество" title="Отчество" width="113px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="phonenumber" name="Номер Телефона" title="Номер Телефона" width="113px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="cDolzhn" name="column" title="column" width="113px">
+      <ModelCombo displayField="name" displayList="qDolsnosti"/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="23px" prefWidth="96px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="16px" height="23px" right="8px" width="96px"/>
+  </Button>
+  <Button cursor="0" name="btnDelete" parent="view" prefHeight="23px" prefWidth="96px" text="Удалить">
+    <AnchorsPaneConstraints bottom="16px" height="23px" right="108px" width="96px"/>
+  </Button>
+  <Button cursor="0" name="btnAdd" parent="view" prefHeight="23px" prefWidth="83px" text="Добавить">
+    <AnchorsPaneConstraints bottom="16px" height="23px" left="330px" width="83px"/>
+  </Button>
+</layout>

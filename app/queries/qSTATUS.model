@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
+  <entity Title="" entityHeight="200" entityIconified="false" entityId="146487658425026" entityLocationX="348" entityLocationY="10" entityWidth="150" tableAlias="t" tableName="KEYSTATUS" tableSchemaName=""/>
+  <entity Title="" entityHeight="200" entityIconified="false" entityId="146487658425031" entityLocationX="172" entityLocationY="8" entityWidth="150" tableAlias="t1" tableName="ROOM" tableSchemaName=""/>
+</datamodel>

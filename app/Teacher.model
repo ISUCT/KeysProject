@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="qDolsnosti" Title="" entityHeight="84" entityIconified="false" entityId="146593959396842" entityLocationX="324" entityLocationY="112" entityWidth="150" queryId="qDolsnosti" tableName="" tableSchemaName=""/>
+  <entity Name="teacherInform" Title="" entityHeight="200" entityIconified="false" entityId="141666471339766" entityLocationX="91" entityLocationY="26" entityWidth="150" queryId="TeacherInform" tableName="" tableSchemaName=""/>
+  <referenceRelation collectionPropertyName="cTeacher" leftEntityFieldName="dolsnost_id" leftEntityId="141666471339766" rightEntityFieldName="dolsnosti_id" rightEntityId="146593959396842" scalarPropertyName="cDolzhn"/>
+</datamodel>

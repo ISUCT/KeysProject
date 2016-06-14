@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="380px" prefWidth="576px"/>
+  <Button cursor="0" name="button1" parent="view" prefHeight="23px" prefWidth="89px" text="Добавить">
+    <AnchorsPaneConstraints bottom="69px" height="23px" right="19px" width="89px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="24px" prefWidth="432px" text="Информация о статусе ключа">
+    <font family="Tahoma" size="18" style="0"/>
+    <AnchorsPaneConstraints height="24px" left="72px" top="12px" width="432px"/>
+  </Label>
+  <Button cursor="0" name="button" parent="view" prefHeight="23px" prefWidth="89px" text="Удалить">
+    <AnchorsPaneConstraints bottom="69px" height="23px" left="360px" width="89px"/>
+  </Button>
+  <Button cursor="0" name="save" parent="view" prefHeight="23px" prefWidth="96px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="21px" height="23px" right="12px" width="96px"/>
+  </Button>
+  <ModelGrid cursor="0" data="qSTATUS" name="modelGrid" parent="view" prefHeight="204px" prefWidth="528px">
+    <AnchorsPaneConstraints height="204px" left="24px" top="50px" width="528px"/>
+    <ServiceGridColumn name="rows-header-service"/>
+    <ModelGridColumn field="rnumber" name="colRnumber" title="colRnumber" width="162px">
+      <ModelSpin/>
+    </ModelGridColumn>
+    <ModelGridColumn field="corp_name" name="colCorp_name" title="colCorp_name" width="163px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="status" name="colStatus" title="colStatus" width="162px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>

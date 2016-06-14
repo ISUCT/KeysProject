@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="Редактирование" view="view">
+  <AnchorsPane cursor="0" name="view" prefHeight="317px" prefWidth="518px"/>
+  <Button cursor="0" name="CorpusInfo" parent="view" prefHeight="35px" prefWidth="120px" text="Редактировать">
+    <AnchorsPaneConstraints height="35px" left="324px" top="197px" width="120px"/>
+  </Button>
+  <Button cursor="0" name="StatusInfo" parent="view" prefHeight="35px" prefWidth="120px" text="Редактировать">
+    <AnchorsPaneConstraints height="35px" left="324px" top="156px" width="120px"/>
+  </Button>
+  <Button cursor="0" name="RoomInfo" parent="view" prefHeight="35px" prefWidth="120px" text="Редактировать">
+    <AnchorsPaneConstraints height="35px" left="324px" top="108px" width="120px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" name="label" parent="view" prefHeight="36px" prefWidth="264px" text="Редактирование данных">
+    <font family="Arial" size="18" style="0"/>
+    <AnchorsPaneConstraints height="36px" left="144px" top="2px" width="264px"/>
+  </Label>
+  <Button cursor="0" name="TeachInfo" parent="view" prefHeight="35px" prefWidth="120px" text="Редактировать">
+    <AnchorsPaneConstraints height="35px" left="324px" top="60px" width="120px"/>
+  </Button>
+  <Label cursor="0" name="label1" parent="view" prefHeight="36px" prefWidth="168px" text="Данные о преподавателях">
+    <AnchorsPaneConstraints height="36px" left="36px" top="60px" width="168px"/>
+  </Label>
+  <Label cursor="0" name="label2" parent="view" prefHeight="36px" prefWidth="240px" text="Редактирование данных об аудиториях">
+    <AnchorsPaneConstraints height="36px" left="36px" top="108px" width="240px"/>
+  </Label>
+  <Label cursor="0" name="label3" parent="view" prefHeight="38px" prefWidth="240px" text="Редактирование данных о статусе ключа">
+    <AnchorsPaneConstraints height="38px" left="36px" top="156px" width="240px"/>
+  </Label>
+  <Label cursor="0" name="label5" parent="view" prefHeight="38px" prefWidth="264px" text="Редактирование данных о корпусах">
+    <AnchorsPaneConstraints height="38px" left="36px" top="197px" width="264px"/>
+  </Label>
+</layout>

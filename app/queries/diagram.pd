@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel datasource="null">
+  <fieldsEntity entityHeight="82" entityIconified="false" entityId="146489141101185" entityLocationX="456" entityLocationY="394" entityWidth="150" tableName="Type"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141664807095573" entityLocationX="220" entityLocationY="40" entityWidth="205" tableName="Teacher"/>
+  <fieldsEntity entityHeight="75" entityIconified="false" entityId="146487905635373" entityLocationX="13" entityLocationY="124" entityWidth="150" tableName="Dolsnosti"/>
+  <fieldsEntity entityHeight="78" entityIconified="false" entityId="141665242721894" entityLocationX="63" entityLocationY="316" entityWidth="150" tableName="Corpus"/>
+  <fieldsEntity entityHeight="74" entityIconified="false" entityId="141665236103325" entityLocationX="699" entityLocationY="240" entityWidth="150" tableName="KeyStatus"/>
+  <fieldsEntity entityHeight="130" entityIconified="false" entityId="141664935410680" entityLocationX="233" entityLocationY="266" entityWidth="150" tableName="Room"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141665121105972" entityLocationX="508" entityLocationY="172" entityWidth="164" tableName="TeacherKey"/>
+  <fieldsEntity entityHeight="74" entityIconified="false" entityId="146487925213374" entityLocationX="280" entityLocationY="427" entityWidth="150" tableName="Floor"/>
+</datamodel>
